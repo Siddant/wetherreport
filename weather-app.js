@@ -97,7 +97,9 @@
               });
               infowindow.setContent(results[0].formatted_address);
               infowindow.open(map, marker);
-            	              map.setZoom(11);
+              map.setZoom(11);
+		map.panTo(marker.position);
+
             } else {
               alert('No results found');
             }
